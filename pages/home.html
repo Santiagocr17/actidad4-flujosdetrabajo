@@ -4,9 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de inicio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Document</title>
+
+    <style>
+        .navbar-nav.navbar-left {
+            position: absolute;
+            left: 12%;
+            transform: translatex(-50%);
+        }
+
+        .footer {
+            height: 20vh;
+            width: 100%;
+            background: linear-gradient(to right , #0c8fa0, #5c11be);
+        }
+
+        .izquierda {
+            margin: 15px;
+            border-radius: 30px;
+            background: linear-gradient(to right , #0c8fa0, #5c11be);
+            text-align: center;
+            color: #fff;
+            height: 100vh;
+            width: 50%;
+        }
+
+        .derecha {
+            background-size: cover;
+            background-position: center;
+            margin: 15px;
+            height: 100vh;
+            width: 50%;
+        }
+
+        #pantalla-dividida {
+            display: flex;
+        }
+
+        .titulo {
+            padding: 25px;
+            font-size: 40px;
+            width: 60%;
+            margin: auto;
+            margin-bottom: 50px;
+            margin-left: 80px;
+            text-align: justify;
+
+        }
+
+        .parrafo {
+            font-size: 19px;
+            padding: 10px;
+            width: 60%;
+            padding: auto;
+            margin-left: 80px;
+            text-align: justify;
+        }
+
+        .button{
+            border: 2px solid white;
+            padding: 15px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 30px;
+            margin-left: 30px;
+            text-align: left;
+            
+        }
+
+
+    </style>
 </head>
 <body>
-    <h1>Aqui ira la pagina de inicio</h1>
+    <div>
+    <div>
+        <nav class="navbar navbar-default" style="background-color: rgb(67, 25, 114);"  role="navigation" >
+            <div class="navbar-collapse collapse ">
+                <ul class="nav navbar-nav navbar-left ">
+                    <li><a href="#" style="color: #fff;">Inicio</a></li>
+                    <li><a href="#" style="color: #fff;">Acerca de</a></li>
+                    <li><a href="#" style="color: #fff;">Galeria</a></li>
+                    <li><a href="#" style="color: #fff;">Contactos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <section id="pantalla-dividida">
+        <div class="izquierda">
+            <h1 class="titulo">Conoce nuestra oferta educativa</h1>
+            <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt, elit ac consectetur congue, magna massa feugiat dui, vel sagittis sem tellus ut ante. Morbi hendrerit turpis nulla, fermentum sagittis ipsum auctor sed. Morbi est velit, imperdiet suscipit ante quis, rutrum efficitur ipsum. Ut scelerisque eu orci et fringilla. Vivamus enim tellus, gravida nec neque vulputate, finibus sollicitudin leo. Quisque vitae scelerisque turpis.</p>
+            <a class="button" href="">Ver más</a>
+        </div >
+        <div class="derecha">
+            <img style="border-radius: 30px;" src="https://media.istockphoto.com/photos/pretty-woman-arriving-to-the-university-with-a-backpack-and-a-picture-id1292484726?k=20&m=1292484726&s=612x612&w=0&h=kh3kAN2vs1ONM8SiIh98Kq9EDJ0EQFUFGpilBhqOEHo=" width="100%" height="100%">
+        
+        </div>
+    </section>
+
+    <div>
+        <footer class="footer" style="background-color: rgb(67, 25, 114);">
+            <h3 style="text-align: center; color: white">Aviso de privacidad</h3>
+        </footer>
+    </div>
+</div>
 </body>
 </html>
